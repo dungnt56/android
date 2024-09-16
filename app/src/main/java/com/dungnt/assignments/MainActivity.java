@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.dungnt.assignments.baigiang.BaiGiangLayout;
 import com.dungnt.assignments.exercise4.Exercise4;
 import com.dungnt.assignments.exercise5.Exercise5;
 import com.dungnt.assignments.exercise7.Exercise7;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else if (id == R.id.exercise7) {
                     Intent intent = new Intent(MainActivity.this, Exercise7.class);
+                    startActivity(intent);
+                } else if (id == R.id.baigiang) {
+                    Intent intent = new Intent(MainActivity.this, BaiGiangLayout.class);
                     startActivity(intent);
                 }
                 drawerLayout.closeDrawers();

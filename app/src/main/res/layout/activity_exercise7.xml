@@ -15,11 +15,13 @@
             android:id="@+id/inputA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="4"
             android:hint="Nhap a" />
         <EditText
             android:id="@+id/inputB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="5"
             android:hint="Nhap b" />
 
         <Button

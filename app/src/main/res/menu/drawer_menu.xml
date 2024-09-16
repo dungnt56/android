@@ -11,4 +11,7 @@
     <item android:id="@+id/exercise7"
         android:title="Exercise 7"
         android:icon="@drawable/baseline_assignment_24"/>
+    <item android:id="@+id/baigiang"
+        android:title="Bai giang"
+        android:icon="@drawable/ic_home"/>
 </menu>

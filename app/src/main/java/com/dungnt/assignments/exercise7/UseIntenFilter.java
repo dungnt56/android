@@ -46,7 +46,7 @@ public class UseIntenFilter extends AppCompatActivity {
             result = dcf.format(-b * 1.0/a);
         }
 
-        resultText.setText(result);
+        resultText.setText("Ket qua ne: " + result);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
