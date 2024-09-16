@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.dungnt.assignments.exercise4.Exercise4;
+import com.dungnt.assignments.exercise5.Exercise5;
 import com.google.android.material.navigation.NavigationView;
 
 import android.content.Intent;
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else if (id == R.id.exercise4) {
                     Intent intent = new Intent(MainActivity.this, Exercise4.class);
+                    startActivity(intent);
+                } else if (id == R.id.exercise5) {
+                    Intent intent = new Intent(MainActivity.this, Exercise5.class);
                     startActivity(intent);
                 }
                 drawerLayout.closeDrawers();
