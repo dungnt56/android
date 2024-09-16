@@ -8,4 +8,7 @@
     <item android:id="@+id/exercise5"
         android:title="Exercise 5"
         android:icon="@drawable/baseline_assignment_24"/>
+    <item android:id="@+id/exercise7"
+        android:title="Exercise 7"
+        android:icon="@drawable/baseline_assignment_24"/>
 </menu>

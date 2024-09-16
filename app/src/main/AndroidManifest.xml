@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Assignments"
         tools:targetApi="31">
         <activity
+            android:name=".exercise7.UseIntenFilter"
+            android:exported="false" />
+        <activity
+            android:name=".exercise7.Exercise7"
+            android:exported="false" />
+        <activity
             android:name=".exercise5.ConvertYearToChinaYear"
             android:exported="false" />
         <activity
