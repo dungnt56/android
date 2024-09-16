@@ -13,11 +13,14 @@
         android:theme="@style/Theme.Assignments"
         tools:targetApi="31">
         <activity
+            android:name=".exercise5.Exercise5"
+            android:exported="false" />
+        <activity
             android:name=".exercise4.ConvertTemporary"
             android:exported="false" />
-        <activity android:name=".exercise4.CalculatorBmi"></activity>
+        <activity android:name=".exercise4.CalculatorBmi" />
         <activity
-            android:name=".Exercise4"
+            android:name=".exercise4.Exercise4"
             android:exported="false" />
         <activity
             android:name=".Exercise3"

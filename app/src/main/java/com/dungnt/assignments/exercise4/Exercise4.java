@@ -1,4 +1,4 @@
-package com.dungnt.assignments;
+package com.dungnt.assignments.exercise4;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,12 +7,8 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.dungnt.assignments.exercise4.CalculatorBmi;
-import com.dungnt.assignments.exercise4.ConvertTemporary;
+import com.dungnt.assignments.R;
 
 public class Exercise4 extends AppCompatActivity {
 
