@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 if (id == R.id.exercise3) {
                     Intent intent = new Intent(MainActivity.this, Exercise3.class);
                     startActivity(intent);
-                } else if (id == R.id.nav_settings) {
-                    Toast.makeText(MainActivity.this, "Settings clicked", Toast.LENGTH_SHORT).show();
+                } else if (id == R.id.exercise4) {
+                    Intent intent = new Intent(MainActivity.this, Exercise4.class);
+                    startActivity(intent);
                 }
                 drawerLayout.closeDrawers();
                 return true;
