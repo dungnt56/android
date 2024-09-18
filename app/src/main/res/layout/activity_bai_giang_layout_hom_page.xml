@@ -1,69 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".baigiang.BaiGiangLayoutHomPage">
+    android:paddingTop="26dp"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:ignore="UseCompoundDrawables">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Icon menu"
-                    android:src="@drawable/ic_menu" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home" />
-            </LinearLayout>
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="Icon search"
-                android:src="@drawable/baseline_search_24" />
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:text="Home" />
         </LinearLayout>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="407dp"
-            android:layout_height="85dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteX="2dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_search_24"/>
 
-            <ImageButton
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_chart"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/textViewHome"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-            <ImageButton
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                android:layout_below="@id/buttonHome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonPost"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_circle_plus"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/textAddPost"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-            <ImageButton
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textSize="12sp"
+                android:layout_below="@id/buttonPost"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonChat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_chat"
+                android:textSize="24sp"
+                android:textColor="#FF0000"
+                android:layout_centerInParent="true">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/textChat"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textSize="12sp"
+                android:layout_below="@id/buttonChat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
